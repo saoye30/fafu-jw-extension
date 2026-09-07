@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "农林大教务系统优化",
+  "version": "0.0.1",
+  "description": "优化农林大教务系统：调整选课列表高度，并显示提示信息",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://jsxyjwgl.fafu.edu.cn/*",
+        "http://jwgl.fafu.edu.cn/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
